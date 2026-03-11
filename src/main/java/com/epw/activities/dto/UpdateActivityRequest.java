@@ -4,7 +4,6 @@ import com.epw.activities.entity.ActivityPriority;
 import com.epw.activities.entity.ActivityStatus;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import java.rmi.registry.LocateRegistry;
 import java.time.LocalDate;
 
 public class UpdateActivityRequest {
