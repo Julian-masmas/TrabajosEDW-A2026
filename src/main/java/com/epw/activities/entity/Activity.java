@@ -54,6 +54,9 @@ public class Activity {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    @OneToOne(mappedBy = "activity", cascade = CascadeType.ALL, orphanRemoval = true)
+    private ActivityDetail detail;
+
     // Getters/Setters (si usas Lombok, puedes reemplazar por Getter/@Setter)
     public Long getId() {
         return id;
@@ -145,5 +148,7 @@ public class Activity {
     public void setReminders(List<Reminder> reminders) {
         this.reminders = reminders;
     }
+
+    
 
 }
